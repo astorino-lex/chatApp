@@ -5,7 +5,7 @@ const supportedEmojis = [
   { txt: ":)", utf: "&#x1F601" },
   { txt: ":(", utf: "&#x1F641" },
   { txt: ":o", utf: "&#x1F632" },
-  { txt: ":')", utf: "$#x1F602" },
+  { txt: ":')", utf: "&#x1F602" },
   { txt: "<3", utf: "&#x1F49B" },
 ];
 let userList = [];
