@@ -1,0 +1,131 @@
+body {
+  font: 14px Helvetica, Arial;
+  background-color: #dfe8f9;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* form and input */
+form {
+  position: fixed;
+  bottom: 0;
+  width: 70%;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  display: flex;
+}
+
+form input {
+  border: 2px solid #666666;
+  padding: 10px;
+  width: 90%;
+  border-radius: 20px;
+}
+
+form button {
+  border: none;
+  background-color: #dfe8f9;
+  cursor: pointer;
+}
+
+.chat {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+}
+
+#messages {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 80%;
+  overflow-y: auto;
+  height: 93vh;
+}
+
+/* message item contents */
+.chat-item {
+  padding: 10px;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.c-you {
+  justify-content: flex-end;
+}
+
+.user-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 92px;
+}
+
+.user {
+  font-weight: bold;
+  text-align: right;
+}
+
+.u-you {
+  text-align: left;
+}
+
+.message {
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: left;
+  margin-left: 15px;
+  padding: 5px 15px;
+  line-height: 1.5;
+}
+
+.m-you {
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+/* current user list */
+.current-users-wrapper {
+  width: 20%;
+  margin: 5px;
+  text-align: center;
+  font-size: 16px;
+  height: 95vh;
+  min-width: 150px;
+}
+.current-users-wrapper span {
+  font-weight: bold;
+}
+
+.current-users {
+  border: 1px solid #666666;
+  padding: 10px;
+  border-radius: 15px;
+  height: 92%;
+  margin-top: 8px;
+  background-color: #ffffff;
+}
+
+.current-users div {
+  margin-bottom: 8px;
+}
+
+/* media queries for browser size */
+@media only screen and (min-width: 960px) {
+  form {
+    max-width: 760px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #messages {
+    height: 88vh;
+  }
+  .current-users-wrapper {
+    height: 90vh;
+  }
+}
